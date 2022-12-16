@@ -1,0 +1,225 @@
+11)#include<stdio.h>
+int main()
+{
+    int area,breadth,height;
+
+    printf("Enter the breadth");
+    printf("Enter the height");
+    scanf("%d %d",&breadth,&height);
+
+    area = 0.5 * breadth * height;
+
+    printf("%d",area);
+
+    return 0;
+}
+
+
+12)#include<stdio.h>
+int main()
+{
+    int c;
+    float f;
+
+    printf("Enter the value of c");
+    scanf("%d",&c);
+
+    f = ( c * 1.8 ) + 32;
+
+    printf("%f",f);
+
+    return 0;
+}
+
+17)#include<stdio.h>
+int main()
+{
+    int year,true,false;
+
+    printf("Enter a year");
+    scanf("%d",&year);
+
+    year = (year%4==0) ? true : false;
+
+    if(year == true)
+
+        printf("leap year");
+
+        else
+            printf("not a leap year");
+
+
+    return 0;
+
+
+}
+
+18)#include<stdio.h>
+int main()
+{
+    int i,n;
+
+    printf("Enter a number");
+    scanf("%d",&n);
+
+    while(i<=n)
+    {
+        if(i>0)
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
+}
+
+15)#include<stdio.h>
+int main()
+{
+    int week;
+    printf("Enter the week");
+    scanf("%d",&week);
+    switch(week)
+    {
+    case 1:
+        printf("Monday");
+        break;
+    case 2:
+        printf("Tuesday");
+        break;
+    case 3:
+        printf("Wednesday");
+        break;
+    case 4:
+        printf("Thursday");
+        break;
+    case 5:
+        printf("Friday");
+        break;
+    case 6:
+        printf("Saturday");
+        break;
+    case 7:
+        printf("Sunday");
+    }
+    return 0;
+}
+
+
+16)#include<stdio.h>
+int main()
+{
+    int month;
+    printf("Enter the month");
+    scanf("%d",&month);
+    switch(month)
+    {
+    case 1:
+        printf("31");
+        break;
+    case 2:
+        printf("28/29");
+        break;
+    case 3:
+        printf("31");
+        break;
+    case 4:
+        printf("30");
+        break;
+    case 5:
+        printf("31");
+        break;
+    case 6:
+        printf("30");
+        break;
+    case 7:
+        printf("31");
+        break;
+    case 8:
+        printf("31");
+        break;
+    case 9:
+        printf("30");
+        break;
+    case 10:
+        printf("31");
+        break;
+    case 11:
+        printf("30");
+        break;
+    case 12:
+        printf("31");
+        break;
+    default:
+        printf("null");
+        break;
+    }
+    return 0;
+}
+
+16)#include<stdio.h>
+int main()
+{
+    int month;
+    printf("Enter a month");
+    scanf("%d",&month);
+    switch(month)
+    {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        printf("31");
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        printf("30");
+        break;
+    case 2:
+        printf("28/29");
+        break;
+    default:
+        printf("null");
+        break;
+    }
+    return 0;
+}
+
+14)#include<stdio.h>
+void evenodd()
+{
+    int i;
+    printf("Enter the values\n");
+    scanf("%d",&i);
+    if(i%2==0)
+        printf("even");
+    else
+        printf("odd");
+}
+void main()
+{
+    evenodd();
+    evenodd();
+    evenodd();
+}
+
+
+13)#include<stdio.h>
+void cube()
+{
+    int num,cube;
+    printf("Enter a number");
+    scanf("%d",&num);
+    cube = num * num * num;
+    printf("%d",cube);
+}
+void main()
+{
+    cube();
+    cube();
+    cube();
+    cube();
+}
